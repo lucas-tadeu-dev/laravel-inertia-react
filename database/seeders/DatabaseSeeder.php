@@ -3,8 +3,9 @@
 namespace Database\Seeders;
 
 use App\Models\Post;
-use App\Models\User;
+use App\Models\Shop;
 // use Illuminate\Database\Console\Seeds\WithoutModelEvents;
+use App\Models\User;
 use Illuminate\Database\Seeder;
 
 class DatabaseSeeder extends Seeder
@@ -16,6 +17,8 @@ class DatabaseSeeder extends Seeder
     {
         // User::factory(10)->create();
 
-        Post::factory(30)->create();
+        Post::factory(1)->create();
+
+        Shop::factory(1)->create();
     }
 }
